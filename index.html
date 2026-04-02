@@ -276,7 +276,7 @@ function submitForm() {
     // 🔹 Google Sheets Submission
     fetch("https://script.google.com/macros/s/AKfycbyfLajCLw1cjvWj2C5RmwRLt3rqNpGC7KT-uNihndMWMfQGGJttM0e_Af2KB-n6v83q/exec", {
         method: "POST",
-        mode: "no-cors",
+        mode: "cors",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
     });
